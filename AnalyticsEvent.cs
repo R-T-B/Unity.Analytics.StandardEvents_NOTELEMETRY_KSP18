@@ -5,7 +5,7 @@ namespace UnityEngine.Analytics
 {
     public static class AnalyticsEvent
     {
-        private static readonly string k_SdkVersion = "0.0.0";
+        private const string k_SdkVersion = "0.0.0";
         private static Action<IDictionary<string, object>> s_StandardEventCallback = (Action<IDictionary<string, object>>)(_param0 => { });
         private static readonly Dictionary<string, object> m_EventData = new Dictionary<string, object>();
         private const bool _debugMode = false;
